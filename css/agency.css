@@ -259,6 +259,7 @@ header .intro-text .intro-heading {
   font-size: 50px;
   line-height: 50px;
   margin-bottom: 25px;
+  text-shadow: 3px 3px #a58855;
 }
 @media (min-width: 768px) {
   header .intro-text {
@@ -266,9 +267,9 @@ header .intro-text .intro-heading {
     padding-bottom: 200px;
   }
   header .intro-text .intro-lead-in {
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Handlee", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: italic;
-    font-size: 40px;
+    font-size: 50px;
     line-height: 40px;
     margin-bottom: 25px;
   }
@@ -750,4 +751,11 @@ body {
 }
 #navLinks {
   font-size: 22px;
+}
+.form-control {
+  height: 50px;
+  display: inline-block;
+  width: 60%;
+  font-size: 25px;
+
 }
