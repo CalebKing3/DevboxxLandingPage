@@ -54,7 +54,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bg-light-gray {
-    background-color: $gray-lighter;
+    // background-color: $gray-lighter;
+    background-image: url('img/header-bg.jpg');
 }
 
 .bg-darkest-gray {
@@ -167,8 +168,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
+    // background-image: url('../img/header-bg.jpg');
     background-image: url('../img/header-bg.jpg');
-    background-repeat: no-repeat;
+    // background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
     @include background-cover;
@@ -288,8 +290,8 @@ section {
                     h4 {
                         margin: 0;
                     }
-                }                
-            }            
+                }
+            }
         }
         .portfolio-caption {
             max-width: 400px;
@@ -574,7 +576,7 @@ section#contact {
        font-weight: 700;
        color: $gray-lighter;
     }
-    :-ms-input-placeholder {  
+    :-ms-input-placeholder {
        @include heading-font;
        font-weight: 700;
        color: $gray-lighter;
@@ -704,8 +706,8 @@ ul.social-buttons {
                 -webkit-transform: rotate(90deg);
                 /* Safari and Chrome */
                 z-index:1052;
-            }            
-        }        
+            }
+        }
     }
     .modal-backdrop {
         opacity: 0;
@@ -735,4 +737,10 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: $theme-primary;
+}
+
+
+////////////////////////   CUSTOM  ///////////////////////////
+section #team .bg-light-gray {
+  background-image: url('img/header-bg');
 }
