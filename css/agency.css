@@ -160,14 +160,15 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand.active {
-  color: #C8C8C8;
+  /*color: #C8C8C8;*/
+  color: #fec503;
 }
 .navbar-custom .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
 }
 .navbar-custom .navbar-toggle {
-  background-color: #C8C8C8;
-  border-color: #C8C8C8;
+  background-color: #fec503;
+  border-color: #fec503;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: white;
@@ -186,18 +187,18 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #C8C8C8;
+  color: #fec503;
   outline: none;
 }
 .navbar-custom .navbar-nav > .active > a {
   border-radius: 0;
   color: white;
-  background-color: #C8C8C8;
+  background-color: #fec503;
 }
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
-  color: #C8C8C8;
-  background-color: #C8C8C8;
+  color: #fec503;
+  background-color: #fec503;
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -757,5 +758,15 @@ body {
   display: inline-block;
   width: 60%;
   font-size: 25px;
-
 }
+#comingSoon {
+  font-size: 35px;
+  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fec503;
+  text-shadow: 5px 5px #222;
+}
+.btn-xl {
+  transform: translateY(-10%);
+  background-color: #fec503
+}
+
