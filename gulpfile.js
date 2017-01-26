@@ -1,5 +1,4 @@
 var gulp = require('gulp');
-var less = require('gulp-less');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 var header = require('gulp-header');
@@ -7,6 +6,7 @@ var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
+var deploy = require('gulp-deploy-git');
 
 // Set the banner content
 var banner = ['/*!\n',
@@ -16,17 +16,6 @@ var banner = ['/*!\n',
     ' */\n',
     ''
 ].join('');
-
-// Compile LESS files from /less into /css
-gulp.task('less', function() {
-    return gulp.src('less/agency.less')
-        .pipe(less())
-        .pipe(header(banner, { pkg: pkg }))
-        .pipe(gulp.dest('css'))
-        .pipe(browserSync.reload({
-            stream: true
-        }))
-});
 
 // Minify compiled CSS
 gulp.task('minify-css', ['less'], function() {
@@ -71,7 +60,7 @@ gulp.task('copy', function() {
 })
 
 // Run everything
-gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy']);
+gulp.task('default', ['minify-css', 'minify-js', 'copy']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
@@ -102,4 +91,10 @@ gulp.task('sass', function() {
         .pipe(browserSync.reload({
             stream: true
         }))
+});
+gulp.task('deploy', function() {
+  return gulp.src('dist/**/*')
+    .pipe(deploy({
+      repository: 'https://gitlab.com/Devboxx/landingPage.git'
+    }));
 });

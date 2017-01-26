@@ -1,12 +1,13 @@
 {
-  "name": "agency",
-  "title": "Agency",
-  "version": "3.3.7+1",
-  "homepage": "http://startbootstrap.com/template-overviews/agency",
-  "author": "Start Bootstrap",
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
+  "name": "devboxxlandingpage",
+  "version": "1.0.0",
+  "description": "devboxx sign up page",
+  "main": "index.html",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-deploy-git": "^0.5.3",
+    "node-sass": "^4.3.0",
+    "nodemon": "^1.11.0"
   },
   "devDependencies": {
     "bootstrap": "^3.3.7",
@@ -14,8 +15,8 @@
     "font-awesome": "^4.6.3",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.0.10",
+    "gulp-deploy-git": "^0.5.3",
     "gulp-header": "^1.8.7",
-    "gulp-less": "^3.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
     "gulp-uglify": "^1.5.4",
@@ -23,6 +24,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/BlackrockDigital/startbootstrap-agency.git"
+    "url": "git+ssh://git@gitlab.com/Devboxx/landingPage.git"
+  },
+  "author": "Caleb King",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/Devboxx/landingPage/issues"
+  },
+  "homepage": "https://gitlab.com/Devboxx/landingPage#README",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
