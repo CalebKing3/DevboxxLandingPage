@@ -16,5 +16,5 @@ build_&_deploy_app:
   only:
    - master
   script:
-   - gulp build -production
-   - gulp deploy
+  #  - gulp build -production
+   - gulp dev
