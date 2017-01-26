@@ -3,6 +3,35 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+ .typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+#comingSoon {
+  font-size: 35px;
+  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fec503;
+  text-shadow: 5px 5px #222;
+  padding-bottom: 300px;
+}
+
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -117,8 +146,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
   color: white;
-  background-color: #fec503;
-  border-color: #f6bf01;
+  background-color: #4286f4;
+  border-color: #4286f4;
 }
 .btn-xl:active,
 .btn-xl.active,
@@ -754,19 +783,16 @@ body {
   font-size: 22px;
 }
 .form-control {
-  height: 50px;
+  height: 60px;
   display: inline-block;
-  width: 60%;
+  width: 40%;
   font-size: 25px;
-}
-#comingSoon {
-  font-size: 35px;
-  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #fec503;
-  text-shadow: 5px 5px #222;
 }
 .btn-xl {
   transform: translateY(-10%);
   background-color: #fec503
+}
+.container {
+  margin-bottom: -200px;
 }
 
